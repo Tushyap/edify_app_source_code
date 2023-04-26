@@ -1,0 +1,99 @@
+.editProfileWrapper {
+    color: #585858;
+}
+
+.fw-bold.text-info.bg-dark {
+    padding: 3px;
+}
+
+.userEditForm {
+    margin-top: 4%;
+    margin-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    /* width: 80%; */
+}
+
+.userEditForm {
+    margin-top: 2%;
+    color: indigo;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.editUserSubmit {
+    margin-top: 2%;
+    color: indigo;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.firstNameLabel,
+.lastNameLabel,
+.mobileLabel,
+.emailLabel {
+    color: #2d2d5e;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.emailLabel {
+    color: green;
+}
+
+
+/* .firstNameInput {
+    color: indigo;
+} */
+
+.inputFieldClass {
+    font-size: 16px;
+    color: #4b0b79;
+    letter-spacing: 1px;
+}
+
+.inputFieldClass:focus {
+    color: blue;
+}
+
+.mobileNumberDiv {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+}
+
+.changeMobileButton {
+    position: relative;
+    height: 55px;
+    left: -30px;
+    letter-spacing: 2px;
+}
+
+.mobileAlterConfirm {
+    position: relative;
+    left: 10px;
+    height: 60px;
+}
+
+.mobileChangeWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+}
+
+.inputMobile {
+    height: 36px;
+}
+
+.changeButtonText {
+    color: #d4fffd;
+    padding: 5px;
+}
+
+.invalidFeedback {
+    font-size: 13px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}

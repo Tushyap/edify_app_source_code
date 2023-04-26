@@ -1,0 +1,14 @@
+.avatar {
+  min-width: 85px;
+  width: 100px;
+  height: 100px;
+}
+.info {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.quote {
+  text-align: justify;
+  line-height: 1.75rem;
+  color: #555;
+}

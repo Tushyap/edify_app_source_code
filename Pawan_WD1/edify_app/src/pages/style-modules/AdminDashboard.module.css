@@ -1,0 +1,53 @@
+.AdminDashboardWrapper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    overflow: hidden;
+}
+
+.adminServicesPanel {
+    
+    -webkit-box-shadow: 8px 0px 6px -6px #aaa;
+	   -moz-box-shadow: 8px 0px 6px -6px #aaa;
+	        box-shadow: 8px 0px 6px -6px #aaa;
+
+            
+    
+    /* border-right: 1px solid grey; */
+}
+.adminServicesPanel li{
+    color: #000;
+}
+.adminServicesDisplayArea {
+    padding: 10px;
+    
+}
+
+.adminNameHeading {
+    color: #085c5c;
+    padding-left: 10px;
+}
+
+.adminServicesList {
+    padding-left: 0;
+    color: #d33636;
+    list-style-type: none;
+}
+.adminServicesList li {
+    color: #555;
+    padding: 10px;
+    display: block;
+    transition: all 0.15s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+.adminServicesList li:hover {
+    background-color: #ecf0f3;
+    color: #47c250;
+}
+.welcomeParaOne {
+    color: green;
+}
+
+.item {
+    color: crimson;
+}

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* ########################## utility classes ######################### */
+.container{
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+
+}
+/* ############### button styling ################ */
+.btn-primary{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Lato",sans-serif;
+    color: #fff;
+    text-align: center;
+    background-color: #02c8db;
+    box-shadow: 3px 3px 4px #b1b1b1,
+    -3px -3px 4px #fff;
+    transition: all 0.5s;
+}
+.btn-primary a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+
+}
+.btn-primary:hover{
+    background-color: #50e5b9;
+}
+.btn-primary:active{
+    background-color: #88ef9e;
+}
+
+
+/* ################# about us ######################### */
+
+.about{
+    padding: 50px 0px;
+    height: 70vh;
+    background:url(./Images/bgimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.about-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about h2{
+    font-size: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+.about h3{
+    font-size: 2.0rem;
+    color: #555;
+    margin-bottom: 3.2rem;
+
+}
+.about .small{
+        font-size: 1.6rem;
+        color: #666;
+        font-weight: 600;
+}
+.about-img{
+        flex: 1 1 400px;
+        padding: 30px;
+        transform: translateX(150%);
+        animation: about-img-animation 1s ease-in-out forwards;
+
+}
+
+@keyframes about-img-animation{
+    100%{
+        transform: translate(0);
+    }
+}
+
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translateX(-150%);
+    animation: about-text-animation 1s ease-in-out forwards;
+
+}
+@keyframes about-text-animation{
+    100%{
+        transform: translate(0);
+    }
+}
+
+.about-img img{
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+
+@keyframes spin{
+    from{transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+.spinning:hover{
+    animation: spin 2s infinite;
+}
+
+/* ########################## testimonial styling ########################### */
+
+.Course_card{
+    padding: 5rem 0 3rem 0;
+    background-color: #ecf0f3;
+    overflow: hidden;
+
+}
+.Course_card_h{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #555;
+}
+.MainCards{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+/* ###################### small screen ####################### */
+
+@media (min-width: 300px) and (max-width: 900px) {
+    html{
+        font-size: 50%;
+    
+    }
+    .about{
+        height: 800px;
+        
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        font-size: 2.2rem;
+        align-items: center;
+    }
+    .about-img img{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        max-width: 100%;
+        margin: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+    .btn-primary{
+        
+        width: 350px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Lato",sans-serif;
+        color: #fff;
+        text-align: center;
+        background-color: #02c8db;
+        box-shadow: 3px 3px 4px #b1b1b1,
+        -3px -3px 4px #fff;
+        transition: all 0.5s;
+    }
+    .card1{
+        margin: auto;
+        
+    }
+    .card2
+    {
+        margin: auto;
+    }
+    
+    
+    }
+    @media (min-width: 900px) and (max-width: 1200px){
+        html{
+            font-size: 50%;
+        
+        }
+        .about{
+            height:60vh;
+            
+        }
+        .about-text{
+            display: flex;
+            flex-direction: column;
+            font-size: 2.2rem;
+            align-items: center;
+        }
+        .about-img img{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            max-width: 100%;
+            margin: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        .btn-primary{
+            
+            width: 350px;
+            height: 60px;
+            border-radius: 30px;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: "Lato",sans-serif;
+            color: #fff;
+            text-align: center;
+            background-color: #02c8db;
+            box-shadow: 3px 3px 4px #b1b1b1,
+            -3px -3px 4px #fff;
+            transition: all 0.5s;
+        }
+    }
+
+
+/* ############ land scape mode ############### */
+

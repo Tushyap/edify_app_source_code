@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* custom colors  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color: #6f5de7;
+  --text-color: #828286;
+  --main-text-color: #333333;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+} */
+
+/* --------------------------------- navbar css style starts 
+                        -------------------------------------------------------*/
+
+.navbar-bg {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    /* position: fixed; */
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.75;
+    z-index: 999;
+    height: 64px;
+    
+}
+
+.navbar-brand {
+    
+    font-size: 3rem;
+}
+
+.navbar li {
+  padding: 0 2rem;
+  list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.navbar li a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar li a:hover {
+  color: var(--primary-color) !important;
+  text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
+}
+
+.btn-style {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  color: #fff;
+  /* background-color: var(--primary-color); */
+  border: 0.1rem solid var(--primary-color);
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+
+.btn-style:first-child {
+  margin-right: 2rem;
+}
+
+.btn-style:hover {
+  border: 0.1rem solid var(--primary-color);
+  /* background-color: transparent; */
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+}
+
+.btn-style-border {
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+}
+
+.btn-style-border:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+}
+.btn-style a{
+  color: #333333;
+}
+
+
+
+/* --------------------------------- Navbar ends  
+                        -------------------------------------------------------*/
+
+                        /* --------------------------------- responsive media queries  
+                        -------------------------------------------------------*/
+@media (min-width: 1500px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1500px !important;
+    }
+    .navbar-bg {
+      opacity: 0.95;
+   
+  }
+  
+  .navbar li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+  }
+  
+  @media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1400px;
+    }
+  }

@@ -1,0 +1,43 @@
+.addAPCardWrapper {
+    padding: 2px;
+}
+
+.inputFieldClass {
+    font-size: 16px;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.cardNameLabel {
+    padding: 1px;
+}
+
+.expiryDateLabel {
+    padding: 1px;
+}
+
+.addCardButton {
+    /* all: unset; */
+    color: white;
+    background-color: #3bb43b;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: transparent;
+    border-radius: 7px;
+    letter-spacing: 2px;
+}
+
+.cardNumberColour {
+    color: #6500ad;
+}
+
+.topInstruction {
+    color: indigo;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.addFormWrapper {
+    margin-left: 1%;
+}

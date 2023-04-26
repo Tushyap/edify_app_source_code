@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab&family=Shippori+Antique&display=swap');
+:global(#courses-page-banner) {
+    background-image: url('../../images/training_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quotation {
+    color: #f6f7f9;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    margin-top: 40px;
+    word-spacing: 3px;
+}
+
+.quotePerson {
+    font-size: 18px;
+    color: #f6f7f9;
+    margin-bottom: 20px;
+}
+
+.allCoursesHeading {
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    color: #bf2bd3;
+}
+
+.allCourses {
+    background-color: #ecf0f3;
+}
+
+.cardsOverall {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+}

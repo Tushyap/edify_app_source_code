@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ########################### navbar styling ############################ */
+/* for desktop */
+.logoImg{
+    height: 52px;
+    width: 70px;
+  }
+.navbarr input[type='checkbox'],
+.navbarr .hamburger-lines{
+    display: none;
+}
+.navbarr{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    /* position: fixed; */
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 999;
+    overflow: hidden;
+}
+.navbarr-container{
+    display: flex;
+    
+    justify-content: space-between;
+    height: 74px;
+    align-items: center;
+}
+.menu-items{
+    order: 2;
+    display: flex;
+
+}
+.menu-items li {
+    padding: 0 2rem;
+    list-style: none;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    
+}
+
+.logo{
+    order: 1;
+    
+    
+}
+.navbarr li a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.navbarr li a:hover{
+    color: #117964;
+}
+
+
+/* ########################## media queries ######################## */
+
+@media(max-width: 768px){
+    .navbarr{
+        opacity: 0.95;
+        position: fixed;
+
+    }
+    .navbarr-container input[type='checkbox'],
+    .navbarr-container .hamburger-lines{
+        display: block;
+    }
+    .navbarr-container{
+        display: block;
+        position: relative;
+        height: 74px;
+    }
+    .navbarr-container input[type='checkbox']{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+
+    }
+    .navbarr-container .hamburger-lines{
+        display: block;
+        height: 32px;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbarr-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    .navbarr-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbarr-container .hamburger-lines .line2{
+        
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbarr-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbarr .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 50vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out ;
+        box-shadow: 5px 0px 10px 0px #aaa;
+    }
+    .navbarr .menu-items .li{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        font-weight: 500;
+        
+    }
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 3rem;
+
+    }
+    .butn-primary{
+        margin-top: 20px;
+    }
+    .menu-items button{
+        margin-left: 0px;
+    }
+    .navbarr-container input[type='checkbox']:checked ~ .menu-items{
+        transform: translateX(0);
+
+    }
+    .navbarr-container input[type='checkbox']:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+    .navbarr-container input[type='checkbox']:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+
+    }
+    .navbarr-container input[type='checkbox']:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+}

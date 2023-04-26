@@ -1,0 +1,66 @@
+.banner {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2rem 0;
+}
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.8) blur(1px);
+}
+.breadcrumb ul {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+.breadcrumb ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.enrollBtn {
+  padding: 1rem 2rem;
+  color: #fff;
+}
+.content {
+  text-align: justify;
+  line-height: 2.25rem;
+}
+.content h2 {
+  padding: 4rem 0 2rem 0;
+}
+.instructors p {
+  margin-bottom: 0.25rem;
+}
+.instructors h2 {
+  padding-bottom: 2rem;
+}
+.instructorItem {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  column-gap: 2rem;
+  border: solid 1px #efefef;
+  padding: 1.2rem 1.5rem;
+  background-color: #f5f5f5;
+  margin-bottom: 3rem;
+}
+.instructorItem img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 3px solid #d3d3d3;
+}
+.instructorItem a {
+  width: auto;
+  padding-right: 1rem;
+}

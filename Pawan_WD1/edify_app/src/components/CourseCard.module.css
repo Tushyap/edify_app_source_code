@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab&family=Shippori+Antique&display=swap');
+.logoCourseInfo {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 2rem;
+}
+
+.courseInfo p {
+    margin-bottom: 0.5rem;
+}
+
+.courseInfo p:first-of-type {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.courseInfo p span {
+    font-weight: bold;
+    color: indigo;
+}
+
+.courseInfo p:nth-of-type(2) {
+    color: blue;
+}
+
+.courseInfo p:nth-of-type(3) {
+    color: green;
+}
+
+.courseDetail {
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    color: #555;
+}
+
+.course {
+
+    padding: 1rem;
+    background-color: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #fff;
+}
+
+.course:hover {
+    transform: scale(1.08);
+    transition: 0.3s ease-in-out;
+    box-shadow: none;
+    border: 1px solid #e0eaff;
+}
+
+.courseLogo {
+    width: 100px;
+    height: 90px;
+    border: 1px solid blue;
+    background-color: rgba(183, 171, 255, 0.5);
+}
+
+.enrolCard{
+    border-radius: 28px;
+background: #fff;
+box-shadow:  3px 3px 3px #c4c7c8,
+             -3px -3px 3px #c4c7c8;
+}

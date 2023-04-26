@@ -1,0 +1,44 @@
+.userDashboardWrapper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    overflow: hidden;
+}
+
+.userServicesPanel {
+    -webkit-box-shadow: 8px 0px 6px -6px #aaa;
+	   -moz-box-shadow: 8px 0px 6px -6px #aaa;
+	        box-shadow: 8px 0px 6px -6px #aaa;
+}
+
+.userServicesDisplayArea {
+    padding: 10px;
+    
+}
+
+.userNameHeading {
+    color: #085c5c;
+    padding: 10px; 
+}
+
+.userServicesList {
+    padding-left: 0;
+    color: #d33636;
+    list-style-type: none;
+}
+
+.userServicesList li {
+    padding: 10px;
+    display: block;
+    transition: all 0.15s ease-in-out;
+}
+
+.userServicesList li:hover {
+    background-color: #ecf0f3;
+    color: #47c250;
+}
+.userServicesList li:active {
+    background-color: #ecf0f3;
+    color: #47c250;
+}
+
+
